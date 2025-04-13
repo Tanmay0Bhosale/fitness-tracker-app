@@ -3,14 +3,18 @@
 <h2>Add a New Meal</h2>
 
 <form action="/meals/add" method="POST">
-  <label>Food:</label>
-  <input type="text" name="food" required />
+  <label for="name">Meal Name:</label>
+  <input type="text" id="name" name="name" required>
 
-  <label>Calories:</label>
-  <input type="number" name="calories" required />
+  <label for="food">Food:</label>
+  <input type="text" id="food" name="food" required>
+
+  <label for="calories">Calories:</label>
+  <input type="number" id="calories" name="calories" required>
 
   <button type="submit">Add Meal</button>
 </form>
+
 
 <a href="/dashboard">Back to Dashboard</a>
 

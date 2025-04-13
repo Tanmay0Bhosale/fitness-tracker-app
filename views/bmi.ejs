@@ -1,0 +1,12 @@
+<%- include('partials/header') %>
+
+
+<h2>Enter Your Details</h2>
+<form action="/bmi" method="POST">
+  <input type="number" name="height" placeholder="Height in cm" required>
+  <input type="number" name="weight" placeholder="Weight in kg" required>
+  <button type="submit">Submit</button>
+</form>
+
+<%- include('partials/footer') %>
+

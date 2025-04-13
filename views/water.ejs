@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+
+<main>
+  <form action="/water" method="POST" style="margin: 20px;">
+    <label>Enter amount (ml):</label>
+    <input type="number" name="amount" required>
+    <button type="submit">Add Water</button>
+  </form>
+
+  <h3>Today's Intake</h3>
+  <ul>
+    <% waterLogs.forEach(log => { %>
+      <li><%= log.amount %> ml at <%= log.date.toLocaleTimeString() %></li>
+    <% }) %>
+  </ul>
+</main>
+
+<%- include('partials/footer') %>

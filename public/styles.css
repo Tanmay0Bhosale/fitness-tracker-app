@@ -52,3 +52,19 @@ nav a {
 nav a:hover {
   color: #002b2b;
 }
+
+/* Style for the "Add Meal" button */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: teal;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: darkcyan;
+}
