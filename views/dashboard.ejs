@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+
+<h2>Welcome, <%= user.name %>!</h2>
+<p>Your BMI is <%= bmi %>. Your goal is to <strong><%= goal %></strong>.</p>
+
+<a href="/meals/add">Add a New Meal</a> |
+<a href="/logout">Logout</a>
+
+<h3>Your Meals</h3>
+<ul>
+  <% meals.forEach(meal => { %>
+    <li><%= meal.food %> - <%= meal.calories %> calories</li>
+  <% }) %>
+</ul>
+
+
+
+<%- include('partials/footer') %>

@@ -1,0 +1,17 @@
+<%- include('partials/header') %>
+
+<h2>Add a New Meal</h2>
+
+<form action="/meals/add" method="POST">
+  <label>Food:</label>
+  <input type="text" name="food" required />
+
+  <label>Calories:</label>
+  <input type="number" name="calories" required />
+
+  <button type="submit">Add Meal</button>
+</form>
+
+<a href="/dashboard">Back to Dashboard</a>
+
+<%- include('partials/footer') %>
