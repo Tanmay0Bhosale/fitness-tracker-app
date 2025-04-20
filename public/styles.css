@@ -1,38 +1,69 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 30px;
-  background-color: #f7f9fc;
+  background-color: #121212;
+  color: #f1f1f1;
 }
 
-h2 {
-  color: #333;
+h2, h3 {
+  color: #ffffff;
 }
 
 a {
-  color: teal;
+  color: #80cbc4;
   text-decoration: none;
   margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #b2dfdb;
 }
 
 form {
   margin-top: 20px;
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 input, button {
-  padding: 8px;
+  padding: 10px;
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
 }
+
+input {
+  background-color: #2c2c2c;
+  color: #f1f1f1;
+  border: 1px solid #444;
+}
+
+button {
+  background-color: #00bfa6;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00897b;
+}
+
 /* Header styling */
 header {
-  background-color: #00bfa6;
+  background: linear-gradient(to right, #004d40, #00695c);
   color: white;
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
 }
 
 header h1 {
@@ -44,27 +75,60 @@ header h1 {
 nav a {
   color: white;
   margin-left: 20px;
-  font-weight: bold;
-  text-decoration: none;
+  font-weight: 600;
   transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #002b2b;
+  color: #a7ffeb;
 }
 
 /* Style for the "Add Meal" button */
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: teal;
+  background: linear-gradient(135deg, #00bfa6, #00796b);
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 6px;
   font-size: 16px;
   margin-top: 10px;
+  transition: background 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
 }
 
 .btn:hover {
-  background-color: darkcyan;
+  background: linear-gradient(135deg, #00796b, #004d40);
+}
+
+
+.dashboard-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+}
+
+.info-card, .meal-section, .summary-section {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 12px;
+}
+
+small {
+  color: #aaa;
+  display: block;
+  margin-top: 4px;
 }
